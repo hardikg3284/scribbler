@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- TODO: Include Google Fonts file here -->
+
+    <!-- Include Css File  -->
+    <link rel="stylesheet" href="/css/post.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    
+  <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu Mono" rel="stylesheet" />
+    <!-- Script File -->
+    <script src="/js/post.js"></script>
+    <!-- bootstrap script -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+
+<body>
+    <div class="bg">
+        <section class="s1">
+            <div class="logo">
+              <h1>ScriBBler</h1>
+              <div class="subheading">Explore, Imagine, Create</div>
+            </div>
+        
+            <div class="Signin">
+              <button class="btn4" data-toggle="modal" data-target="#signinModal" data-backdrop='static'
+                data-keyboard='false'>Sign In</button>
+              <button class="btn4" data-toggle="modal" data-target="#signupModal" data-backdrop='static'
+                data-keyboard='false'>Sign Up</button>
+            </div>
+          </section>
+        
+      
+          <div class="modal fade" id="signinModal" role="dialog" style="padding: 15rem;">
+            <div class="modal-dialog modal-dialog-centered">
+      
+              <div class="modal-content modal-font">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                  <h2 class="modal-title text-center modal-font">Welcome Back!</h2>
+                  <hr>
+      
+                  <div class="modal-body">
+                    <form style="margin: 15px;">
+                      <div class="form-group " style="font-family: Ubuntu">
+                        <label for="exampleInputEmail1" class="holder">Username</label>
+                        <input type="text" class="form-control" id="exampleInputloginEmail1" required="true"
+                          style="background-color: rgb(223, 215, 215);" aria-describedby="emailHelp"
+                          placeholder="Enter Username">
+      
+                      </div>
+                      <div class="form-group " style="font-family: Ubuntu">
+                        <label for="exampleInputPassword1" class="holder">Password</label>
+                        <input type="password" class="form-control" id="exampleInputloginPassword" required="true"
+                          style="background-color: rgb(223, 215, 215);font-family: Ubuntu" placeholder="Enter Password">
+                      </div>
+      
+                      <button type="submit" class="btn1" style="background-color: #0ec038; color: white;">
+                        Sign In
+                      </button>
+                      <div>
+                        <h4 class="text-center" style="padding: 5px;font-family: Ubuntu">Not a
+                          member?
+                          <a> <span style="color: blue; cursor: pointer;" data-toggle="modal" data-target="#signupModal"
+                              data-backdrop='static' data-keyboard='false'>Sign Up</span></a>
+                        </h4>
+                      </div>
+      
+                    </form>
+      
+                  </div>
+                </div>
+      
+      
+              </div>
+            </div>
+          </div>
+      
+      
+          <div class="modal fade" id="signupModal" role="dialog" style="padding: 10rem;">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content modal-font">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                  <h2 class="modal-title text-center" class="holder">Get Started</h2>
+                  <hr>
+      
+                  <div class="modal-body">
+                    <form style="margin: 12px;">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="holder">Full Name</label>
+                        <input type="text" class="form-control" id="exampleInputName" required="true"
+                          style="background-color: rgb(223, 215, 215);" aria-describedby="emailHelp"
+                          placeholder="Enter Full Name">
+      
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="holder">Username</label>
+                        <input type="text" class="form-control" id="exampleInputEmail" required="true"
+                          style="background-color: rgb(223, 215, 215);" aria-describedby="emailHelp"
+                          placeholder="Enter Username">
+      
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1" class="holder">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword" required="true"
+                          style="background-color: rgb(223, 215, 215);" placeholder="Enter Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1" class="holder">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputcPassword" required="true"
+                          style="background-color: rgb(223, 215, 215);" placeholder="Confirm Password">
+                      </div>
+      
+                      <button type="submit" class="btn1" required="true" style="background-color: #0ec038; color: white;">
+                        Sign Up
+                      </button>
+      
+      
+                    </form>
+      
+                  </div>
+      
+      
+      
+                </div>
+      
+      
+              </div>
+            </div>
+          </div>
+          </div>
+   
+        <div id="postSection">
+            <h1 id="titletext">GitHub Repository Initialization Script</h1>
+            <div style="display: block;height: 70px;"> <span>
+                    <p id="name" style="float: left;font-family: Satisfy;font-size: 28px;">Prithvi Yewale</p>
+                    <button type="button" class="btn btn-danger" id="edit" onclick="postEdit()"
+                        style="float: right;">Edit <i class="fa fa-edit"></i></button>
+                </span></div>
+            <br />
+            <div>
+
+                <p id="paraText">GitHub Repository Initialization Script
+                  This Bash script automates the process of creating a new GitHub repository, initializing it with a README file, and pushing the initial commit to the remote repository. The script prompts the user for a repository name and utilizes the GitHub API to create a new public repository.
+                  
+                  Prerequisites
+                  Before using this script, make sure you have the following:
+                  
+                  GitHub account
+                  GitHub username
+                  GitHub personal access token with repo scope
+                  Instructions
+                  Set your GitHub username and personal access token:
+                  # GitHub username 
+                  GITHUB_USERNAME="YourGitHubUsername"
+                  
+                  # GitHub personal access token
+                  GITHUB_TOKEN="YourGitHubPersonalAccessToken"
+                  Navigate to the desired directory where you want to create the new repository:
+                  cd /path/to/your/Documents
+                  Run the script:
+                  ./script_name.sh
+                  Enter the desired repository name when prompted.
+                  
+                  The script will create a new directory with the given repository name, initialize a Git repository, create an initial commit with a README file, and push it to the newly created GitHub repository.
+                  
+                  Script Explanation
+                  git init -b main: Initializes a new Git repository with the main branch.
+                  
+                  curl -u "$GITHUB_USERNAME:$GITHUB_TOKEN" https://api.github.com/user/repos -d '{"name":"'"$REPO_NAME"'", "private": false}': Uses the GitHub API to create a new public repository with the specified name.
+                  
+                  git remote add origin "git@github.com:$GITHUB_USERNAME/$REPO_NAME.git": Sets the remote repository URL.
+                  
+                  git branch -M main: Renames the default branch to main.
+                  
+                  git push -u origin main: Pushes the initial commit to the remote repository.
+                  
+                  code .: Opens the repository in Visual Studio Code (you may need to have it installed).
+                  
+                  Feel free to fork this repository, make any changes, and suggest improvements. Your contributions are welcome!
+                </p>
+            </div>
+            <div class="likeCommentSection">
+                <div class="likeBlogButton">
+                    <button type="button" class="btn btn-danger" id="likeBlog" onclick="postLiked()"><i
+                            class="fa fa-thumbs-up" aria-hidden="true"></i> Like</button>
+                    <h5 style="font-family: sans-serif;font-weight: 300;" id="likeCount">Be the first one to like this!
+                    </h5>
+                </div>
+                <br />
+                <textarea id="userComments" placeholder="Leave a comment..." value="" rows="4" cols="100"></textarea>
+                <br />
+                <button type="button" class="btn btn-danger" id="addList"
+                    onclick="addComments(userComments)">Comment</button>
+                <h2 style="font-style: bold;font-size: 18px;">All Comments</h2>
+                <br />
+                <div id="viewComments">
+                    <div id="addEventNames"></div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
